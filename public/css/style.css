@@ -1,0 +1,31 @@
+.no-decoration{
+    text-decoration: none;
+    list-style-type: none;
+}
+ul li{
+    list-style-type: none;
+}
+ul tr td li{
+    list-style-type: none;
+}
+header
+{
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.letter{
+    letter-spacing: 0.2em;
+}
+
+#corps{
+    background-image: url("../img/bg_corps.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body{
+    /*font-family: 'Source Code Pro', monospace;*/
+    font-family: 'Slabo 27px', serif;
+}

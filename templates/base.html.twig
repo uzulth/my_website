@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
+<head>
+
+
+    <meta charset="UTF-8">
+    <title>Yann Clain développeur freelance PHP Symfony Marseille / Bouches-du-Rhône</title>
+    <meta name="description" content="Je suis développeur freelance PHP Symfony dans les Bouches-du-Rhône">
+    <meta property="og:title" content="Yann Clain développeur freelance PHP Symfony Marseille / Bouches-du-Rhône">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://yannclain.com">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Yann Clain développeur freelance PHP Symfony Marseille / Bouches-du-Rhône">
+    <meta property="og:image" content="http://yannclain.com/img/logo_shadow.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('/css/tailwind.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121062873-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121062873-1');
+    </script>
+</head>
+<body>
+
+<!-- HEADER -->
+        {% block header %}
+            {% include'/Default/Module/header.html.twig'%}
+        {% endblock %}
+<!--END HEADER -->
+
+<!-- BODY -->
+        {% block body %}
+
+        {% endblock %}
+<!-- END BODY -->
+
+<!-- FOOTER -->
+        {% block footer %}
+            {% include'/Default/Module/footer.html.twig'%}
+        {% endblock %}
+<!-- END FOOTER -->
+
+    </body>
+</html>

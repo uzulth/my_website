@@ -1,0 +1,66 @@
+<footer class="w-full p-3 bg-grey-dark flex justify-center flex-wrap-reverse">
+
+    <div class="w-full sm:w-1/6 pt-2">
+        <div class="">
+            <h3 class="uppercase">Coordonnées</h3>
+            <table>
+                <ul class="p-3">
+                    <tr>
+                        <td><i class="fas fa-user"></i></td>
+                        <td><li class="no-decoration py-1">Clain Yann</li></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-briefcase"></i></td>
+                        <td><li class="no-decoration py-1">Développeur freelance</li></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-mobile-alt"></i></td>
+                        <td><li class="no-decoration py-1">+336 89 04 29 83</li></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-at"></i></td>
+                        <td><li class="no-decoration py-1"><a href="mailto:contact@yannclain.com" class="no-decoration text-black">contact@yannclain.com</a></li></td>
+                    </tr>
+
+                </ul>
+            </table>
+        </div>
+
+        <div class="pt-3">
+            <h3 class="uppercase">Réseaux</h3>
+            <ul class="inline">
+                <li><a href="https://github.com/uzulth" class="no-decoration text-black" target="_blank"><i class="fab fa-github-square fa-2x no-decoration"></i></a></li>
+                <li><a href="https://twitter.com/Uzulth" class="no-decoration text-black" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                <li><a href="https://linkedin.com/in/yann-clain-1864a814a" class="no-decoration text-black" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="w-2/6">
+        <div class="bg-grey-lighter shadow rounded to w-full p-6 my-2">
+
+            {% for type, messages in app.session.flashbag.all() %}
+                <div class="bg-{{ type }}-lightest border border-{{ type }} text-{{ type }}-dark p-4 rounded">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+
+            <div class="flex justify-between items-center p-3">
+                <h3 class="uppercase text-grey font-thin text-center">Contactez moi</h3>
+            </div>
+            <form action="{{ path('index') }}" method="post">
+                <input name="nom" type="text" class="border-solid border w-full rounded px-3 py-2 my-2" placeholder="Votre nom ou société">
+                <input name="mail" type="email" class="border-solid border w-full rounded px-3 py-2 my-2" placeholder="Votre mail">
+                <textarea name="message" class="border-solid border w-full rounded px-3 py-2 my-2" placeholder="Votre message"></textarea>
+                <input name="antispam" type="text" class="border-solid border w-full rounded px-3 py-2 my-2" placeholder="Antispam : Combien font vingt-et-un fois deux ?">
+                <button class="bg-black text-white px-3 py-2 rounded mt-4">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+</footer>

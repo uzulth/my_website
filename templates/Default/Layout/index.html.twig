@@ -1,0 +1,109 @@
+{% extends'base.html.twig' %}
+
+
+{% block body %}
+
+
+    <div id="corps" class="container mx-auto flex flex-wrap md:flex-row">
+
+
+        <section class="container p-8">
+
+            <div>
+                <h2 class="uppercase text-blue-darker py-3">Qui suis je ?</h2>
+                <p class="mb-2">Freelance spécialisé dans le développement web, c’est avec passion que j’exerce ce métier.</p>
+                <p>Mon leitmotiv : le souci constant d’un résultat de qualité.</p>
+            </div>
+            <div class="mt-8">
+                <h2 class="uppercase text-blue-darker py-3">Ce que je propose</h2>
+
+                <p class="mb-2">Je vous accompagne dans vos projets de communication numérique en m’adaptant à vos besoins tout en vous apportant des solutions qui répondent au mieux à vos attentes.</p>
+
+                <p class="mb-6">Mes compétences me permettent de vous proposer les prestations suivantes :</p>
+
+                <h3 class="mb-2 text-blue-darkest">Conception de solutions web</h3>
+
+                <p>Développement de sites internet (marchand, corporate …).</p>
+                <br>
+                <ul>
+                    <li class="mb-2"><p>Responsive</p></li>
+                    <li class="mb-2"><p>Sur mesure</p></li>
+                    <li class="mb-2"><p>Et/ou avec utilisation de template</p></li>
+                </ul>
+                <br>
+
+                <h3 class="mb-2  text-blue-darkest">Refonte de solutions web existantes</h3>
+
+                <p>Mise à jour de votre site actuel.</p>
+
+                <br>
+                <ul>
+                    <li class="mb-2"><p>Audit de votre dispositif web, de vos besoins et proposition de solutions</p></li>
+                    <li class="mb-2"><p>Refonte intégrale ou partielle</p></li>
+                    <li class="mb-2"><p>Ajout de modules/fonctionnalités spécifiques à votre activité/besoins.</p></li>
+                </ul>
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="container px-8">
+
+            <div class="py-8">
+                <h2 class="uppercase text-blue-darker">Compétences</h2>
+
+                <div class="flex flex-wrap justify-around p-3">
+
+
+                    <div class="rounded w-full sm:w-1/2 letter">
+                        <div class="sm:py-4">
+                            <div class="font-bold text-xl sm:mb-2 text-center text-red-dark letter">Technologies</div>
+                            <ul>
+                                <li class="py-2">PHP 5/7 (objet)</li>
+                                <li class="py-2">Javascript</li>
+                                <li class="py-2">HTML5 / CSS3 (standards W3C)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded w-full sm:w-1/2 letter">
+                        <div class="sm:py-4">
+                            <div class="font-bold text-xl sm:mb-2 text-center text-red-dark">Frameworks</div>
+                            <ul>
+                                <li class="py-2">Symfony 2/3/4</li>
+                                <li class="py-2">Bootstrap / jQuery</li>
+                                <li class="py-2">Tailwind</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="rounded w-full sm:w-1/2 letter">
+                        <div class="sm:py-4">
+                            <div class="font-bold text-xl sm:mb-2 text-center text-red-dark">Bases de données</div>
+                            <ul>
+                                <li class="py-2">Mysql</li>
+                                <li class="py-2">Doctrine</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rounded w-full sm:w-1/2 letter">
+                        <div class="sm:py-4">
+                            <div class="font-bold text-xl sm:mb-2 text-center text-red-dark">Gestion de projet</div>
+                            <ul>
+                                <li class="py-2">Modélisation (MCD, UML)</li>
+                                <li class="py-2">Versioning (Git)</li>
+                                <li class="py-2">Agile</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+{% endblock %}
